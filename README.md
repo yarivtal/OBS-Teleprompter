@@ -1,5 +1,8 @@
 # OBS-Teleprompter
 A *time* sensitive teleprompter script for OBS Studio 31
+Timings are taken from SRT file.
+
+![Demo](demo/obs_teleprompter_demo.gif)
 
 OBS Teleprompter consists of a single OBS Studio LUA script (Tested on 31.0.1).
 The script needs to be added in OBS Studio under the menu tools/scripts.
@@ -17,10 +20,10 @@ In OBS Studio, add Text sources (GDI+ on windows):
 + A text source named the same as the name you put in the above "Text Source Name" field, prefixed with "prev ". I use "prev telep". This is used to display the text of the previous subtitle/prompt.
 + A text source named the same as the name you put in the above "Text Source Name" field, prefixed with "next ". I use "next telep". This is used to display the text of the next subtitle/prompt.
 
+![Text Source when base Source Name is telep](demo/obs_studio_teleprompter_sources_setup.png)
+
 Arrange the text sources location and color as you like. I put the prev prompt on top, followed by the current prompt, followed by the next prompt. I also arrange the colors to emphasize the current prompt.
 
 Once you start recording a 3 sec delay is added to the prompting to give you time to arrange your self. You can change that in the code.
 
 See attached video for demo.
-
-![Demo](demo/obs teleprompter demo.gif)
