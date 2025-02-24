@@ -10,6 +10,8 @@ Add the script and set the parameters:
 + Subtitles Start Time HH:MM:SS,mmm: An *optional* start time for the first subtitle to use. Must be empty or in the exact right format (so don't forget the millisecs).
   This is the same format as used in the SRT file so simly copy-paste.
 
+![Adding Script and Setting Parameters](demo/obs_studio_script_parameters.png)
+
 In OBS Studio, add Text sources (GDI+ on windows):
 + A text source named the same as the name you put in the above "Text Source Name" field. I use "telep". This is used to display the text of the current subtitle/prompt.
 + A text source named the same as the name you put in the above "Text Source Name" field, prefixed with "prev ". I use "prev telep". This is used to display the text of the previous subtitle/prompt.
@@ -21,3 +23,4 @@ Once you start recording a 3 sec delay is added to the prompting to give you tim
 
 See attached video for demo.
 
+![Demo](demo/obs teleprompter demo.gif)
