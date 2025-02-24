@@ -87,7 +87,7 @@ function update_subtitle()
     local cur_subtitle_remaining_time = 0
     local elapsed_time = nil
 
-    if is_recording and next_subtitle then
+    if is_recording then
         if not recording_start_time then
             recording_start_time = current_time + 3000 - subtitles_start_time -- Store recording start time
         end
@@ -96,7 +96,7 @@ function update_subtitle()
 
         -- Update subtitles based on elapsed time
         --for _, subtitle in ipairs(subtitles) do
-        if elapsed_time >= next_subtitle.start_time then
+        if next_subtitle and elapsed_time >= next_subtitle.start_time then
             if cur_subtitle then
                 prev_text = cur_subtitle.text
             end
