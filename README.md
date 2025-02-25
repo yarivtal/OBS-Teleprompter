@@ -1,11 +1,20 @@
 # OBS-Teleprompter
+
 A *time* sensitive teleprompter script for OBS Studio 31
 Timings are taken from SRT file.
+
+### How is this different from a scrolling text teleprompter?
+
+Scrolling text has a constant speed and is not adequate for cases where the timing is important, i.e. voice over existing videos.
+
+OBS-Teleprompter uses SRT subtitles that contain timing for the text, allowing time-based teleprompting.
 
 ![Demo](demo/obs_teleprompter_demo.gif)
 
 OBS Teleprompter consists of a single OBS Studio LUA script (Tested on 31.0.1).
+
 The script needs to be added in OBS Studio under the menu tools/scripts.
+
 Add the script and set the parameters:
 + SRT File: An SRT subtitles file with timings. This is the file used to time the teleprompting.
 + Text Source Name: base name of the text source that will be used to display the changing subtitle text.
