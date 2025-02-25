@@ -36,3 +36,7 @@ Arrange the text sources location and color as you like. I put the prev prompt o
 Once you start recording a 3 sec delay is added to the prompting to give you time to arrange your self. You can change that in the code.
 
 See attached gif video at top of README for demo.
+
+
+### Tags:
+captions subtitles script-timer teleprompter SRT video
